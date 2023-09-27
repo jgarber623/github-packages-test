@@ -16,12 +16,12 @@ jobs:
         run: |
           sed -ibak -E "s/@.+(\/noop)/@${{ github.repository_owner }}\1/" package.json
           cat package.json
-      # - uses: actions/setup-node@v3
-      #   with:
-      #     node-version: lts/hydrogen
-      #     cache: npm
-      #     registry-url: https://npm.pkg.github.com
-      # - run: npm ci
-      # - run: npm publish
-      #   env:
-      #     NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/setup-node@v3
+        with:
+          node-version: lts/hydrogen
+          cache: npm
+          registry-url: https://npm.pkg.github.com
+      - run: npm ci
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
