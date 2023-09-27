@@ -1,0 +1,17 @@
+{
+  "name": "@jgarber/noop",
+  "version": "0.1.0",
+  "description": "A package that does nothing!",
+  "homepage": "https://github.com/jgarber623/github-packages-test",
+  "license": "CC0-1.0",
+  "author": {
+    "name": "Jason Garber",
+    "email": "jason@sixtwothree.org",
+    "url": "https://sixtwothree.org"
+  },
+  "main": "index.js",
+  "repository": "github:jgarber623/github-packages-test",
+  "publishConfig": {
+    "access": "public"
+  }
+}
